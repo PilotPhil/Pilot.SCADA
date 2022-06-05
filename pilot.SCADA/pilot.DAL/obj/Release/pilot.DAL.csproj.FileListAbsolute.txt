@@ -1,0 +1,9 @@
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\bin\Release\pilot.DAL.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\bin\Release\pilot.DAL.pdb
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\bin\Release\Newtonsoft.Json.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\bin\Release\Newtonsoft.Json.xml
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Release\pilot.DAL.csproj.AssemblyReference.cache
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Release\pilot.DAL.csproj.CoreCompileInputs.cache
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Release\pilot.DAL.csproj.CopyComplete
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Release\pilot.DAL.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Release\pilot.DAL.pdb

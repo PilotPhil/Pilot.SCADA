@@ -1,0 +1,44 @@
+﻿<Window x:Class="pilot.SCADA.Views.TaskFlowManageView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pilot.SCADA.Views"
+        mc:Ignorable="d" x:Name="thisWindow"
+        Title="任务管理" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Orientation="Vertical" Margin="5">
+            <Button Content="添加任务模块" Height="30" Width="120" Margin="5"
+                    Command="{Binding AddOneTaskCommand}" CommandParameter="{Binding ElementName=thisWindow}"/>
+            <Button Content="删除任务模块" Height="30" Width="120" Margin="5"
+                    Command="{Binding RemoveOneTaskCommand}" 
+                    CommandParameter="{Binding ElementName=lst_taskList, Path=SelectedIndex}"/>
+            <Button Content="预览模块视图" Height="30" Width="120" Margin="5"
+                    Command="{Binding PreviewTaskViewCommand}" 
+                    CommandParameter="{Binding ElementName=lst_taskList, Path=SelectedIndex}"/>
+        </StackPanel>
+
+        <ListView Grid.Column="1" ItemsSource="{Binding TaskList,UpdateSourceTrigger=PropertyChanged}"
+                  Background="White" Margin="0,10,10,10" x:Name="lst_taskList">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="模块名称" Width="Auto" DisplayMemberBinding="{Binding ModuleName}"/>
+                    <GridViewColumn Header="版本" Width="Auto" DisplayMemberBinding="{Binding ModuleVersion}"/>
+                    <GridViewColumn Header="作者" Width="Auto" DisplayMemberBinding="{Binding Author}"/>
+                    <GridViewColumn Header="路径" Width="Auto" DisplayMemberBinding="{Binding Path}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+        <!--先使用ListBox存储任务列表，后期采用Wrappanel存储图块显示的任务单-->
+        <!--<WrapPanel Grid.Column="1" Margin="5" x:Name="WrapPanel_taskList">
+            
+        </WrapPanel>-->
+    </Grid>
+</Window>

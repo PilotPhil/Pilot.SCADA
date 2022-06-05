@@ -1,0 +1,67 @@
+﻿<hc:Window x:Class="pilot.SCADA.Views.SerialView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        mc:Ignorable="d"
+        Title="串口设置" Height="280" Width="200" FontFamily="Microsoft YaHei" FontWeight="ExtraLight"
+        WindowStartupLocation="CenterScreen" x:Name="thisWindow" Background="White"
+        ResizeMode="NoResize"
+        DataContext="{Binding Source={StaticResource Locator},Path=SerialCom}">
+
+    <hc:Window.NonClientAreaBackground>
+        <LinearGradientBrush
+            EndPoint="1.002,0.498" StartPoint="-0.024,0.502">
+            <GradientStop Color="#f5f6ff" Offset="0.1"/>
+            <GradientStop Color="#aabcff" Offset="0.6"/>
+            <GradientStop Color="#a3b6ff" Offset="0.99"/>
+        </LinearGradientBrush>
+    </hc:Window.NonClientAreaBackground>
+
+    <Grid Margin="5">
+        <!--串口配置-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="端口" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <ComboBox Grid.Row="0" Grid.Column="1" x:Name="Port" Width="120" Height="20" Margin="5"
+                                ItemsSource="{Binding SerialModel.PortList}"
+                                SelectedItem="{Binding SerialModel.PortName}"/>
+
+        <TextBlock Text="波特率" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <ComboBox Grid.Row="1" Grid.Column="1" x:Name="BaudRate" Width="120" Height="20" Margin="5"
+                                ItemsSource="{Binding SerialModel.BaudRateList}"
+                              SelectedItem="{Binding SerialModel.BaudRate}"/>
+
+        <TextBlock Text="数据位" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <ComboBox Grid.Row="2" Grid.Column="1" x:Name="DataBit" Width="120" Height="20" Margin="5"
+                                ItemsSource="{Binding SerialModel.DataBitList}"
+                              SelectedItem="{Binding SerialModel.DataBit}"/>
+
+        <TextBlock Text="校验位" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <ComboBox Grid.Row="3" Grid.Column="1" x:Name="Parity" Width="120" Height="20" Margin="5"
+                                ItemsSource="{Binding SerialModel.ParityList}"
+                              SelectedItem="{Binding SerialModel.Parity}"/>
+
+        <TextBlock Text="停止位" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <ComboBox Grid.Row="4" Grid.Column="1" x:Name="StopBit" Width="120" Height="20" Margin="5"
+                                ItemsSource="{Binding SerialModel.StopBitList}"
+                              SelectedItem="{Binding SerialModel.StopBit}"/>
+
+        <Button Content="确定" Grid.Row="5" Grid.Column="1" Margin="5" Width="120" Height="30"
+                            Command="{Binding ConfirmCommand}"
+                            CommandParameter="{Binding ElementName=thisWindow}"/>
+    </Grid>
+</hc:Window>

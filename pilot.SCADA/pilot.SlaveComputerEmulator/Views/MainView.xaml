@@ -1,0 +1,76 @@
+﻿<hc:Window x:Class="pilot.SlaveComputerEmulator.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pilot.SlaveComputerEmulator.Views"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        mc:Ignorable="d"
+        Title="Slave Computer Emulator(RTU)" Height="320" Width="360"
+        ShowTitle="False" ResizeMode="NoResize">
+
+    <hc:Window.NonClientAreaContent>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Image Source="../Assets/img/虚拟机.png" Width="25" Margin="2,0,0,0"/>
+            <TextBlock Text="SCEmulator(RTU)" VerticalAlignment="Center" FontSize="15" Margin="10,0,0,0"/>
+        </StackPanel>
+    </hc:Window.NonClientAreaContent>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="端口" FontSize="20" Margin="5" Grid.Row="0" Grid.Column="0"/>
+        <ComboBox Height="30" Margin="5" Grid.Row="0" Grid.Column="1"
+                  ItemsSource="{Binding MainModel.ComList}"
+                  SelectedItem="{Binding MainModel.Com}"/>
+
+
+        <TextBlock Text="从站地址" FontSize="20" Margin="5" Grid.Row="1" Grid.Column="0"/>
+        <TextBox Height="30" Margin="5" Grid.Row="1" Grid.Column="1"
+                 Text="{Binding MainModel.SlaveId}"/>
+        <TextBlock Text="号" FontSize="20" Margin="5" Grid.Row="1" Grid.Column="2"/>
+
+        <TextBlock Text="传感器数量" FontSize="20" Margin="5" Grid.Row="2" Grid.Column="0"/>
+        <TextBox Height="30" Margin="5" Grid.Row="2" Grid.Column="1"
+                 Text="{Binding MainModel.SensorNum}"/>
+        <TextBlock Text="个" FontSize="20" Margin="5" Grid.Row="2" Grid.Column="2"/>
+
+        <TextBlock Text="刷新率" FontSize="20" Margin="5" Grid.Row="3" Grid.Column="0"/>
+        <TextBox Height="30" Margin="5" Grid.Row="3" Grid.Column="1"
+                 Text="{Binding MainModel.Freq}"/>
+        <TextBlock Text="Hz" FontSize="20" Margin="5" Grid.Row="3" Grid.Column="2"/>
+
+        <TextBlock Text="值上限" FontSize="20" Margin="5" Grid.Row="4" Grid.Column="0"/>
+        <TextBox Height="30" Margin="5" Grid.Row="4" Grid.Column="1"
+                 Text="{Binding MainModel.UpValue}"/>
+
+        <TextBlock Text="值下限" FontSize="20" Margin="5" Grid.Row="5" Grid.Column="0"/>
+        <TextBox Height="30" Margin="5" Grid.Row="5" Grid.Column="1"
+                 Text="{Binding MainModel.DownValue}"/>
+
+        <StackPanel Orientation="Horizontal"  Grid.Row="6" Grid.Column="1" HorizontalAlignment="Right">
+            <Button Content="开始" x:Name="btn_start"
+                Width="50" Height="30"  Margin="5"
+                Command="{Binding StartCommand}" CommandParameter="{Binding ElementName=btn_start}"/>
+            <Button Content="停止"
+                Width="50" Height="30"  Margin="5"
+                Command="{Binding StopCommand}" CommandParameter="{Binding ElementName=btn_start}"/>
+        </StackPanel>
+
+    </Grid>
+</hc:Window>

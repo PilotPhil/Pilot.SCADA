@@ -1,0 +1,15 @@
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\bin\Debug\pilot.HMS300.exe.config
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\bin\Debug\pilot.HMS300.exe
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\bin\Debug\pilot.HMS300.pdb
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\obj\Debug\Views\MainView.g.cs
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\obj\Debug\App.g.cs
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\obj\Debug\pilot.HMS300_MarkupCompile.cache
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\obj\Debug\pilot.HMS300_MarkupCompile.lref
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\obj\Debug\Views\MainView.baml
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\obj\Debug\pilot.HMS300.g.resources
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\obj\Debug\pilot.HMS300.Properties.Resources.resources
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\obj\Debug\pilot.HMS300.csproj.GenerateResource.cache
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\obj\Debug\pilot.HMS300.csproj.CoreCompileInputs.cache
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\obj\Debug\pilot.HMS300.exe
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\obj\Debug\pilot.HMS300.pdb
+D:\Gitee\HMS_DotNet\pilot.HMS300\pilot.HMS300\obj\Debug\pilot.HMS300.csproj.AssemblyReference.cache

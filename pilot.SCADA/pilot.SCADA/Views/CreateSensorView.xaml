@@ -1,0 +1,148 @@
+﻿<hc:Window x:Class="pilot.SCADA.Views.CreateSensorView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pilot.SCADA.Views"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        mc:Ignorable="d"
+        Title="{Binding Title}" Height="400" Width="650" FontFamily="../Assets/ttf/#Gen-Jyuu-Gothic-P-Medium-2"
+        WindowStartupLocation="CenterScreen" Background="White" x:Name="thisWindow"
+           DataContext="{Binding Source={StaticResource Locator},Path=CreateSensor}">
+
+    <hc:Window.NonClientAreaBackground>
+        <LinearGradientBrush
+            EndPoint="1.002,0.498" StartPoint="-0.024,0.502">
+            <GradientStop Color="#f5f6ff" Offset="0.1"/>
+            <GradientStop Color="#aabcff" Offset="0.6"/>
+            <GradientStop Color="#a3b6ff" Offset="0.99"/>
+        </LinearGradientBrush>
+    </hc:Window.NonClientAreaBackground>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <GroupBox Header="基础信息" Grid.Row="0" Grid.Column="0" Margin="5" Background="White">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.ColumnSpan="2">
+                    <TextBlock Text="序号" Width="50" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding SensorModel.ID}" Width="120" Height="20" Margin="5"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="2">
+                    <TextBlock Text="传感器名" Width="50" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding SensorModel.Name}" Width="120" Height="20" Margin="5"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2">
+                    <TextBlock Text="位置" Width="50" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding SensorModel.Location}" Width="120" Height="20" Margin="5"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="2">
+                    <TextBlock Text="类型" Width="50" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <ComboBox Width="120" Height="20" Margin="5" x:Name="cbx_type"
+                              ItemsSource="{Binding SensorModel.TypeList}"
+                              SelectedItem="{Binding SensorModel.Type}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2">
+                    <TextBlock Text="单位" Width="50" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <ComboBox Width="120" Height="20" Margin="5" x:Name="cbx_unit"
+                              ItemsSource="{Binding SensorModel.UnitList}"
+                              SelectedItem="{Binding SensorModel.Unit}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.ColumnSpan="2">
+                    <TextBlock Text="数据源" Width="50" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Width="120" Height="20" Margin="5" 
+                              Text="{Binding SensorModel.DataSourceIndex}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.ColumnSpan="2">
+                    <TextBlock Text="启用" Width="50" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <CheckBox VerticalAlignment="Center" 
+                                  IsChecked="{Binding SensorModel.IsEnable}" Width="120" Height="20" Margin="5"/>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+
+        <Button Content="确认" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Right"
+                Command="{Binding ConfirmCommand}" CommandParameter="{Binding ElementName=thisWindow}"
+                Width="80" Height="30" Margin="5"/>
+
+
+        <GroupBox Grid.Column="1" Header="已指派的任务" Background="White" Margin="5">
+            <ListView  ItemsSource="{Binding SensorModel.TaskList,UpdateSourceTrigger=PropertyChanged}"
+                  Background="White"  x:Name="list_task_selected" BorderThickness="0">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="模块名称" Width="Auto" DisplayMemberBinding="{Binding ModuleName}"/>
+                        <GridViewColumn Header="版本" Width="Auto" DisplayMemberBinding="{Binding ModuleVersion}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </GroupBox>
+
+        <StackPanel Orientation="Vertical" Grid.Column="2" VerticalAlignment="Center">
+            <Button Height="36" Width="36" Margin="5"
+                    Command="{Binding RemoveOneTaskCommand}" CommandParameter="{Binding ElementName=list_task_selected, Path=SelectedIndex}">
+                <TextBlock Text="&#xe618;" FontSize="22" FontFamily="../Assets/ttf/#iconfont" Foreground="Blue"
+                           VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Button>
+
+            <Button Height="36" Width="36" Margin="5" 
+                    Command="{Binding AddOneTaskCommand}" CommandParameter="{Binding ElementName=list_task_loaded, Path=SelectedIndex}">
+                <TextBlock Text="&#xe60b;" FontSize="22" FontFamily="../Assets/ttf/#iconfont" Foreground="Blue"
+                           VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Button>
+        </StackPanel>
+
+        <GroupBox Grid.Column="3" Header="已加载的任务" Background="White" Margin="5">
+            <ListView x:Name="list_task_loaded" Background="White" BorderThickness="0"
+                      ItemsSource="{Binding LoadedTaskList}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="模块名称" DisplayMemberBinding="{Binding ModuleName}"/>
+                        <GridViewColumn Header="版本" Width="Auto" DisplayMemberBinding="{Binding ModuleVersion}"/>
+                    </GridView>
+                </ListView.View>
+                <ListView.ContextMenu>
+                    <ContextMenu Width="100">
+                        <MenuItem Header="详情" Command="{Binding DetailsAcountCmd}" CommandParameter="{Binding ElementName=listView,Path=SelectedItem}" Width="100">
+                        </MenuItem>
+                        <MenuItem Header="编辑" Command="{Binding EditAcountCmd}" CommandParameter="{Binding ElementName=listView,Path=SelectedItem}" Width="100">
+                        </MenuItem>
+                        <MenuItem Header="删除" Command="{Binding DeleteAcountCmd}" CommandParameter="{Binding ElementName=listView,Path=SelectedItem}" Width="100">
+                        </MenuItem>
+                    </ContextMenu>
+                </ListView.ContextMenu>
+            </ListView>
+
+        </GroupBox>
+    </Grid>
+</hc:Window>

@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="pilot.SCADA.App" Collapsed="true">
+    <Position X="41.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Common.DelegateCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAAAAAAAACAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Commom\DelegateCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Common.NotificationObject" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commom\NotificationObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="pilot.SCADA.Converter.InverseBoolConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converter\InverseBoolConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Converter.ListAddIndexConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="46.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converter\ListAddIndexConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Converter.ListArray2StrListConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Converter\ListArray2StrListConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Converter.LogBackGroundConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="50" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converter\LogBackGroundConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.DAL.JsonSerialize" Collapsed="true">
+    <Position X="44.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAABAAAAAABA=</HashCode>
+      <FileName>DAL\JsonSerialize.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Global.BasePath" Collapsed="true">
+    <Position X="43" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Global\BasePath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Global.DataStorage">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQEAAAAIAAAAEAAAAIABAAADBABAAAABCAAAAAACAA=</HashCode>
+      <FileName>Global\DataStorage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Global.DataPoint" Collapsed="true">
+    <Position X="50" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Global\DataStorage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Global.Registrant" Collapsed="true">
+    <Position X="41.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Global\Registrant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Global.SerialObj" Collapsed="true">
+    <Position X="50" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Global\SerialObj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Global.SysStatue" Collapsed="true">
+    <Position X="43" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Global\SysStatue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Models.LogRecordModel">
+    <Position X="32" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAQBAAAAAAAAAAAAAAAACUABAAAAABA=</HashCode>
+      <FileName>Models\LogRecordModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Models.ModbusParamModel" Collapsed="true">
+    <Position X="43" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAEAgAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ModbusParamModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Models.ProjectRecordModel">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAIAIAAAAQAAAAAACACAAAAA=</HashCode>
+      <FileName>Models\ProjectRecordModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Models.SensorModel">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQAAAAAAgAQAIAJAAAQAQgAEACBAAyAAAAAAAAo=</HashCode>
+      <FileName>Models\SensorModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Models.SerialComParamModel" Collapsed="true">
+    <Position X="46.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAQAgAAAAAAAAAAAAAAABAEoAAAAAAAAAAAQAUAAA=</HashCode>
+      <FileName>Models\SerialComParamModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Models.TaskFlowModel" Collapsed="true">
+    <Position X="20.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TaskFlowModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Models.TaskModuleModel" Collapsed="true">
+    <Position X="46.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAgAAAAQAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TaskModuleModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Properties.Resources" Collapsed="true">
+    <Position X="43" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Properties.Settings" Collapsed="true">
+    <Position X="41.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.ViewModels.CreateSensorModelView">
+    <Position X="36.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAgAAAAAggAAEAACAAAAAIAAAAAAgCAoAAAAAIAA=</HashCode>
+      <FileName>ViewModels\CreateSensorModelView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.ViewModels.LoggerRecordViewModel">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEIAAAAAAAAAAAAQAAAAAABAAAAAAAAAAQEAAABAA=</HashCode>
+      <FileName>ViewModels\LoggerRecordViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.ViewModels.MainViewModel">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgACAAFYAAEAAAABABCAAAEAAAIAAAAKACAAAIAEgA=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.ViewModels.ModbusViewModel" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgEAAAAAIgQQAAAACCAgAIkBAAIAAAACAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ModbusViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.ViewModels.NewProjectViewModel" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAACAAAQAgQAAAAAEAAEAAgAAQAgAAAJAAAAAQAAAE=</HashCode>
+      <FileName>ViewModels\NewProjectViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.ViewModels.ProjectManagerViewModel" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAEAAADAAAAEAAgAEAAAAQgBgAAAAAAAABEAAAEAAA=</HashCode>
+      <FileName>ViewModels\ProjectManagerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.ViewModels.SensorManagerViewModel">
+    <Position X="29.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAEAIAAAAAQAgAAIAACAAAgBAAAIAAABAgAAAAEAAg=</HashCode>
+      <FileName>ViewModels\SensorManagerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.ViewModels.SerialComViewModel" Collapsed="true">
+    <Position X="34.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgRABAAAAAAAAAgAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\SerialComViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.ViewModels.TaskFlowManageViewModel" Collapsed="true">
+    <Position X="38.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAAEAgAAAEAAAAAAAgJAAABCAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\TaskFlowManageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.ViewModels.TaskProcessViewModel">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAgAAAAEAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>ViewModels\TaskProcessViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.ViewModels.TiledCheckViewModel">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAABAACAAAAAAAAAAAAgAAAgAAAAACA=</HashCode>
+      <FileName>ViewModels\TiledCheckViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Views.BluePrintView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="44.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\BluePrintView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.CheckValueView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="46.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\CheckValueView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.ChartViewModel" Collapsed="true">
+    <Position X="27.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEBAAQAAAAAAAIIAAAAAAAIEAgAABAAAAAEAABAA=</HashCode>
+      <FileName>Views\CheckValueView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Views.CreateSensorView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\CreateSensorView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MainView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.ModbusView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="44.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ModbusView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.NewProjectView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="46.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\NewProjectView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.PrjItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\PrjItem.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.PrjItemViewModel" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAIAAAAAAAAAAAAAAAAAAAQACAAAAAAAAAAA=</HashCode>
+      <FileName>Views\PrjItem.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pilot.SCADA.Views.RecentProjectView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="50" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Views\RecentProjectView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.SensorManagerView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="44.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SensorManagerView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.SerialComView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SerialComView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.TaskFlowManageView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="44.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TaskFlowManageView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.TaskPreviewView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TaskPreviewView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.TaskProcessView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="50" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TaskProcessView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.TiledCheckView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TiledCheckView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.TiledView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TiledView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="pilot.SCADA.Views.view2" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="44.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\view2.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9.08" />
+</ClassDiagram>

@@ -1,0 +1,12 @@
+D:\Gitee\pilot.SCADA\pilot.SCADA\WpfCustomControlLibrary1\obj\Debug\Window1.g.cs
+D:\Gitee\pilot.SCADA\pilot.SCADA\WpfCustomControlLibrary1\obj\Debug\WpfCustomControlLibrary1_MarkupCompile.cache
+D:\Gitee\pilot.SCADA\pilot.SCADA\WpfCustomControlLibrary1\obj\Debug\WpfCustomControlLibrary1_MarkupCompile.lref
+D:\Gitee\pilot.SCADA\pilot.SCADA\WpfCustomControlLibrary1\obj\Debug\Window1.baml
+D:\Gitee\pilot.SCADA\pilot.SCADA\WpfCustomControlLibrary1\obj\Debug\WpfCustomControlLibrary1.dll
+D:\Gitee\pilot.SCADA\pilot.SCADA\WpfCustomControlLibrary1\obj\Debug\WpfCustomControlLibrary1.pdb
+D:\Gitee\pilot.SCADA\pilot.SCADA\WpfCustomControlLibrary1\bin\Debug\WpfCustomControlLibrary1.dll
+D:\Gitee\pilot.SCADA\pilot.SCADA\WpfCustomControlLibrary1\bin\Debug\WpfCustomControlLibrary1.pdb
+D:\Gitee\pilot.SCADA\pilot.SCADA\WpfCustomControlLibrary1\obj\Debug\WpfCustomControlLibrary1.g.resources
+D:\Gitee\pilot.SCADA\pilot.SCADA\WpfCustomControlLibrary1\obj\Debug\WpfCustomControlLibrary1.Properties.Resources.resources
+D:\Gitee\pilot.SCADA\pilot.SCADA\WpfCustomControlLibrary1\obj\Debug\WpfCustomControlLibrary1.csproj.GenerateResource.cache
+D:\Gitee\pilot.SCADA\pilot.SCADA\WpfCustomControlLibrary1\obj\Debug\WpfCustomControlLibrary1.csproj.CoreCompileInputs.cache

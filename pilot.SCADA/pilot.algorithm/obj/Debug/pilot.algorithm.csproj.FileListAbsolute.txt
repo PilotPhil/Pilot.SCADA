@@ -1,0 +1,10 @@
+D:\Gitee\HMS_DotNet\pilot.WPF.HMS\pilot.algorithm\bin\Debug\pilot.algorithm.pdb
+D:\Gitee\HMS_DotNet\pilot.WPF.HMS\pilot.algorithm\obj\Debug\pilot.algorithm.csproj.CoreCompileInputs.cache
+D:\Gitee\HMS_DotNet\pilot.WPF.HMS\pilot.algorithm\obj\Debug\pilot.algorithm.pdb
+D:\Gitee\HMS_DotNet\pilot.WPF.HMS\pilot.algorithm\bin\Debug\pilot.algorithm.exe
+D:\Gitee\HMS_DotNet\pilot.WPF.HMS\pilot.algorithm\obj\Debug\pilot.algorithm.exe
+D:\Gitee\pilot.SCADA\pilot.SCADA\pilot.algorithm\bin\Debug\pilot.algorithm.exe
+D:\Gitee\pilot.SCADA\pilot.SCADA\pilot.algorithm\bin\Debug\pilot.algorithm.pdb
+D:\Gitee\pilot.SCADA\pilot.SCADA\pilot.algorithm\obj\Debug\pilot.Algorithm.csproj.CoreCompileInputs.cache
+D:\Gitee\pilot.SCADA\pilot.SCADA\pilot.algorithm\obj\Debug\pilot.algorithm.exe
+D:\Gitee\pilot.SCADA\pilot.SCADA\pilot.algorithm\obj\Debug\pilot.algorithm.pdb

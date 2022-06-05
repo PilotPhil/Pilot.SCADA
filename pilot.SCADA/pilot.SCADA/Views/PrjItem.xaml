@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="pilot.SCADA.Views.PrjItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:pilot.SCADA.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <Style  TargetType ="Hyperlink" x:Key="hyperLinkStyle">
+            <Setter  Property ="Foreground"  Value ="#209AC2" />
+            <!-- 清除文字修饰(去掉下划线) -->
+            <Setter  Property ="TextBlock.TextDecorations" Value ="{x:Null}" />
+            <Style.Triggers >
+                <Trigger  Property ="IsMouseOver"  Value ="True" >
+                    <Setter  Property ="Foreground"  Value ="#F27D00"   />
+                    <!-- 在鼠标悬停时显示下划线 -->
+                    <Setter  Property ="TextBlock.TextDecorations" >
+                        <Setter.Value >
+                            <TextDecorationCollection >
+                                <TextDecoration  Location ="Underline" />
+                            </TextDecorationCollection >
+                        </Setter.Value >
+                    </Setter >
+                </Trigger >
+            </Style.Triggers >
+        </Style >
+    </UserControl.Resources>
+
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock  Margin="5,0" Width="150" FontSize="15" FontWeight="Normal" Foreground="#3b71b3">
+                <Hyperlink Command="{Binding OpenPrjCommand}" Style="{StaticResource hyperLinkStyle}">
+                    <TextBlock Text="{Binding PrjModel.ProjectName}"/>
+                </Hyperlink>
+            </TextBlock>
+
+            <TextBlock Text="{Binding PrjModel.SaveTime}" Margin="5,0" Width="180" FontSize="15" FontWeight="Normal" Foreground="#3b71b3"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

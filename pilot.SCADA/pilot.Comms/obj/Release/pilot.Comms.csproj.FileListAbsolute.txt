@@ -1,0 +1,6 @@
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.Comms\bin\Release\pilot.Comms.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.Comms\bin\Release\pilot.Comms.pdb
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.Comms\obj\Release\pilot.Comms.csproj.AssemblyReference.cache
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.Comms\obj\Release\pilot.Comms.csproj.CoreCompileInputs.cache
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.Comms\obj\Release\pilot.Comms.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.Comms\obj\Release\pilot.Comms.pdb

@@ -1,0 +1,17 @@
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Debug\pilot.DAL.csproj.CoreCompileInputs.cache
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\bin\Debug\pilot.DAL.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\bin\Debug\pilot.DAL.pdb
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\bin\Debug\Newtonsoft.Json.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Debug\pilot.DAL.csproj.CopyComplete
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Debug\pilot.DAL.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Debug\pilot.DAL.pdb
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\bin\Debug\pilot.DAL.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\bin\Debug\pilot.DAL.pdb
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\bin\Debug\Newtonsoft.Json.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Debug\pilot.DAL.csproj.AssemblyReference.cache
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Debug\pilot.DAL.csproj.CoreCompileInputs.cache
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Debug\pilot.DAL.csproj.CopyComplete
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Debug\pilot.DAL.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.DAL\obj\Debug\pilot.DAL.pdb

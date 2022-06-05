@@ -1,0 +1,6 @@
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.Comms\bin\Debug\pilot.Comms.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.Comms\bin\Debug\pilot.Comms.pdb
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.Comms\obj\Debug\pilot.Comms.csproj.CoreCompileInputs.cache
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.Comms\obj\Debug\pilot.Comms.dll
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.Comms\obj\Debug\pilot.Comms.pdb
+D:\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.SCADA\pilot.Comms\obj\Debug\pilot.Comms.csproj.AssemblyReference.cache
